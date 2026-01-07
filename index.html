@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="On Demand Fuel Services - Professional fuel delivery and fuel tank rentals. Off-road diesel for heavy equipment and generators. Reliable, fast, and convenient fuel solutions.">
+    <meta name="keywords"
+        content="fuel delivery, fuel tank rental, off-road diesel, heavy equipment fuel, generator fuel, diesel delivery, fuel services">
+    <title>On Demand Fuel Services | Professional Fuel Delivery & Tank Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.querySelector('#mobile-menu-button');
+            const closeMenuButton = document.querySelector('#mobile-menu-close');
+            const mobileMenu = document.querySelector('[role="dialog"]');
+
+            // Hide menu by default
+            if (mobileMenu) {
+                mobileMenu.style.display = 'none';
+            }
+
+            function toggleMenu(event) {
+                event.stopPropagation();
+                if (mobileMenu) {
+                    const isHidden = mobileMenu.style.display === 'none';
+                    mobileMenu.style.display = isHidden ? 'block' : 'none';
+                }
+            }
+
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', toggleMenu);
+            }
+            if (closeMenuButton) {
+                closeMenuButton.addEventListener('click', toggleMenu);
+            }
+
+            // Add click handler to close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (mobileMenu && mobileMenu.style.display === 'block') {
+                    if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                        mobileMenu.style.display = 'none';
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="pt-16 font-sans">
+    <!-- Navigation -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <nav class="mx-auto h-20 flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html" class="-m-1.5 p-1.5">
+                    <span class="sr-only">On Demand Fuel Services</span>
+                    <img class="h-16 w-auto" src="logo/On Demand Lgo Red and Black.png"
+                        alt="On Demand Fuel Services Logo">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="mobile-menu-button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#home" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Home</a>
+                <a href="#equipment" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Equipment
+                    Fueling</a>
+                <a href="#generator" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Generator
+                    Fueling</a>
+                <a href="#tanks" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Tank Rentals</a>
+                <a href="contact.html" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Contact</a>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-10"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="-m-1.5 p-1.5">
+                        <span class="sr-only">On Demand Fuel Services</span>
+                        <img class="h-12 w-auto" src="logo/On Demand Lgo Red and Black.png"
+                            alt="On Demand Fuel Services Logo">
+                    </a>
+                    <button type="button" id="mobile-menu-close" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#home"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+                            <a href="#equipment"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Equipment
+                                Fueling</a>
+                            <a href="#generator"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Generator
+                                Fueling</a>
+                            <a href="#tanks"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Tank
+                                Rentals</a>
+                            <a href="contact.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div id="home" class="relative bg-white">
+        <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+            <div class="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-48 lg:pt-40 xl:col-span-6">
+                <div class="mx-auto max-w-lg lg:mx-0">
+                    <h1 class="mt-24 text-pretty text-5xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-7xl">
+                        Reliable Fuel Delivery When You Need It</h1>
+                    <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
+                        Professional off-road diesel delivery for heavy equipment and generators. Our fuel trucks are
+                        also equipped with DEF for optional top-off service. Fuel tank rentals
+                        available. Fast, reliable, and convenient fuel solutions for your business.
+                    </p>
+                    <div class="mt-10 flex items-center gap-x-6">
+                        <a href="contact.html"
+                            class="rounded-md bg-red-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
+                            Get Started
+                        </a>
+                        <a href="#equipment" class="text-base/7 font-semibold text-gray-900">Learn more <span
+                                aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+                <img class="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full rounded-lg shadow-xl"
+                    src="pictures/IMG_4628.jpg" alt="Professional fuel delivery truck providing diesel fuel services"
+                    onerror="this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&auto=format&fit=crop'">
+            </div>
+        </div>
+    </div>
+
+    <!-- Equipment Fueling Section -->
+    <section id="equipment" class="py-20 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Equipment Fueling</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto">
+                    Keep your heavy equipment running with reliable off-road diesel delivery. We fuel excavators,
+                    bulldozers, loaders, cranes, and all your construction equipment right on your job site.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="pictures/IMG_4629.jpg" alt="Heavy equipment being fueled on construction site"
+                        class="w-full h-auto rounded-lg shadow-xl"
+                        onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop'">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Professional Equipment Fueling Services</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our experienced team delivers high-quality off-road diesel directly to your construction
+                        site,
+                        ensuring your heavy equipment never runs out of fuel. Our fuel trucks are also equipped with DEF
+                        for optional top-off service. We understand that downtime
+                        costs money,
+                        which is why we offer flexible scheduling and on-demand delivery.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>On-site fueling for all heavy equipment types</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>High-quality off-road diesel fuel</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Competitive pricing on all fuel deliveries</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Low minimum order of 100 gallons (vs. competitors' higher minimums)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Scheduled or emergency delivery available</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Bulk pricing discounts for large projects</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block rounded-md bg-red-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700">
+                        Request Equipment Fueling
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Region Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="pictures/South Florida.png" alt="South Florida Service Area Map"
+                        class="w-full h-auto rounded-lg shadow-xl"
+                        onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop'">
+                </div>
+                <div>
+                    <p class="text-base/7 font-semibold text-red-600 mb-2">Our Service Area</p>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">We Service All of South Florida Proudly</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        On Demand Fuel Services is proud to serve businesses and construction sites throughout South
+                        Florida.
+                        Our reliable fuel delivery and tank rental services are available across the entire region,
+                        ensuring
+                        your operations never miss a beat.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-1">Miami-Dade County</h3>
+                                <p class="text-gray-600">Serving Miami, Homestead, Hialeah, and all of Miami-Dade County
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-1">Broward County</h3>
+                                <p class="text-gray-600">Covering Fort Lauderdale, Hollywood, Pompano Beach, and all of
+                                    Broward County</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-1">Monroe County</h3>
+                                <p class="text-gray-600">Serving the Florida Keys including Key Largo, Marathon, and Key
+                                    West</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="contact.html"
+                            class="inline-block rounded-md bg-red-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700">
+                            Request Service in Your Area
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section 1 -->
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pr-4">
+                    <div
+                        class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                        <img class="absolute inset-0 size-full object-cover brightness-100" src="pictures/IMG_4632.jpg"
+                            alt="Professional fuel delivery service"
+                            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop'">
+                        <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
+                        <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                            aria-hidden="true">
+                            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-red-600 to-red-800 opacity-40"
+                                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                            </div>
+                        </div>
+                        <figure class="relative isolate">
+                            <div class="flex items-center gap-x-4 mb-4">
+                                <div class="size-12 rounded-full bg-gray-50 flex items-center justify-center">
+                                    <svg class="size-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <div class="flex items-center">
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+                                    <strong class="text-white font-semibold">Verified Customer Review</strong>
+                                </div>
+                            </div>
+                            <blockquote class="mt-6 text-xl/8 font-semibold text-white">
+                                <p>"On Demand Fuel Services has been a game-changer for our construction site. Their
+                                    reliable delivery and professional service keep our equipment running without
+                                    interruption. Highly recommended!"</p>
+                            </blockquote>
+                            <figcaption class="mt-6 text-sm/6 text-gray-300">
+                                <strong class="font-semibold text-white">Construction Site Manager,</strong> Verified
+                                Customer
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-base/7 text-gray-700 lg:max-w-lg">
+                        <p class="text-base/7 font-semibold text-red-600">Why Choose Us</p>
+                        <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            Your Trusted Fuel Partner</h2>
+                        <div class="max-w-xl">
+                            <p class="mt-6">At On Demand Fuel Services, we understand that downtime costs money. That's
+                                why we're committed to providing fast, reliable fuel delivery and tank rental services
+                                that keep your operations running smoothly.</p>
+                            <p class="mt-8">Our professional team delivers high-quality off-road diesel directly to your
+                                job site, whether you need fuel for heavy equipment, generators, or both. We offer
+                                competitive pricing and a low minimum order of just 100 gallons - significantly lower
+                                than most competitors. Our fuel trucks are also equipped with DEF for optional top-off
+                                service. We offer flexible scheduling and on-demand service to meet your unique needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-10 flex">
+                        <a href="contact.html" class="text-base/7 font-semibold text-red-600">Get in touch today
+                            <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">On Demand Fuel Services</h4>
+                    <p class="text-gray-400">Professional fuel delivery and tank rental services for your business
+                        needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#equipment" class="text-gray-400 hover:text-white">Equipment Fueling</a></li>
+                        <li><a href="#generator" class="text-gray-400 hover:text-white">Generator Fueling</a></li>
+                        <li><a href="#tanks" class="text-gray-400 hover:text-white">Tank Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <div class="flex flex-col space-y-2 text-gray-400">
+                        <p>Phone: <a href="tel:3059219225" class="hover:text-white">(305) 921-9225</a></p>
+                        <p>Email: <a href="mailto:Sales@ondemandfuelingfl.com"
+                                class="hover:text-white">Sales@ondemandfuelingfl.com</a></p>
+                        <p>Address: 15476 NW 77th Ct St 111<br>Miami Lakes, FL 33016</p>
+                        <p>Available 24/7 for emergency fuel delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 On Demand Fuel Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Generator Fueling Section -->
+    <section id="generator" class="py-20 bg-gray-50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Generator Fueling</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto">
+                    Ensure uninterrupted power with our reliable generator fueling services. We keep your generators
+                    running
+                    so your operations never stop, whether for events, construction sites, or emergency backup power.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Dedicated Generator Fuel Solutions</h3>
+                    <p class="text-gray-600 mb-6">
+                        Generators are critical for keeping operations running, especially during events, construction
+                        projects, or power outages. Our generator fueling service ensures you always have the fuel you
+                        need when you need it. Our fuel trucks are also equipped with DEF for optional top-off service.
+                        We work around your schedule to minimize disruption.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Regular scheduled fueling for continuous operation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>High-quality diesel fuel delivery</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Competitive pricing on all fuel deliveries</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Low minimum order of 100 gallons (vs. competitors' higher minimums)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Emergency fuel delivery available 24/7</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Compatible with all generator types and sizes</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block rounded-md bg-red-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700">
+                        Request Generator Fueling
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="pictures/IMG_4630.jpg" alt="Generator being fueled on site"
+                        class="w-full h-auto rounded-lg shadow-xl"
+                        onerror="this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&auto=format&fit=crop'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section 2 -->
+    <div class="bg-gray-50 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pr-4">
+                    <div
+                        class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                        <img class="absolute inset-0 size-full object-cover brightness-100" src="pictures/IMG_4632.jpg"
+                            alt="Professional fuel delivery service"
+                            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop'">
+                        <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
+                        <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                            aria-hidden="true">
+                            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-red-600 to-red-800 opacity-40"
+                                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                            </div>
+                        </div>
+                        <figure class="relative isolate">
+                            <div class="flex items-center gap-x-4 mb-4">
+                                <div class="size-12 rounded-full bg-gray-50 flex items-center justify-center">
+                                    <svg class="size-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <div class="flex items-center">
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+                                    <strong class="text-white font-semibold">Verified Customer Review</strong>
+                                </div>
+                            </div>
+                            <blockquote class="mt-6 text-xl/8 font-semibold text-white">
+                                <p>"On Demand Fuel Services has been a game-changer for our construction site. Their
+                                    reliable delivery and professional service keep our equipment running without
+                                    interruption. Highly recommended!"</p>
+                            </blockquote>
+                            <figcaption class="mt-6 text-sm/6 text-gray-300">
+                                <strong class="font-semibold text-white">Construction Site Manager,</strong> Verified
+                                Customer
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-base/7 text-gray-700 lg:max-w-lg">
+                        <p class="text-base/7 font-semibold text-red-600">Why Choose Us</p>
+                        <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            Your Trusted Fuel Partner</h2>
+                        <div class="max-w-xl">
+                            <p class="mt-6">At On Demand Fuel Services, we understand that downtime costs money. That's
+                                why we're committed to providing fast, reliable fuel delivery and tank rental services
+                                that keep your operations running smoothly.</p>
+                            <p class="mt-8">Our professional team delivers high-quality off-road diesel directly to your
+                                job site, whether you need fuel for heavy equipment, generators, or both. We offer
+                                competitive pricing and a low minimum order of just 100 gallons - significantly lower
+                                than most competitors. Our fuel trucks are also equipped with DEF for optional top-off
+                                service. We offer flexible scheduling and on-demand service to meet your unique needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-10 flex">
+                        <a href="contact.html" class="text-base/7 font-semibold text-red-600">Get in touch today
+                            <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">On Demand Fuel Services</h4>
+                    <p class="text-gray-400">Professional fuel delivery and tank rental services for your business
+                        needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#equipment" class="text-gray-400 hover:text-white">Equipment Fueling</a></li>
+                        <li><a href="#generator" class="text-gray-400 hover:text-white">Generator Fueling</a></li>
+                        <li><a href="#tanks" class="text-gray-400 hover:text-white">Tank Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <div class="flex flex-col space-y-2 text-gray-400">
+                        <p>Phone: <a href="tel:3059219225" class="hover:text-white">(305) 921-9225</a></p>
+                        <p>Email: <a href="mailto:Sales@ondemandfuelingfl.com"
+                                class="hover:text-white">Sales@ondemandfuelingfl.com</a></p>
+                        <p>Address: 15476 NW 77th Ct St 111<br>Miami Lakes, FL 33016</p>
+                        <p>Available 24/7 for emergency fuel delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 On Demand Fuel Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tank Rentals Section -->
+    <section id="tanks" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Fuel Tank Rentals</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto">
+                    Maintain a consistent fuel supply on your job site with our portable fuel tank rentals. Perfect for
+                    construction sites, events, farms, and any location that needs reliable on-site fuel storage. All
+                    tanks
+                    include delivery, setup, and pickup service.
+                </p>
+            </div>
+            <div class="mb-12">
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <img src="pictures/IMG_4631.jpg" alt="Portable fuel tanks on construction site"
+                            class="w-full h-auto rounded-lg shadow-xl"
+                            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop'">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">BLOC Double-Wall Fuel Tanks</h3>
+                        <p class="text-gray-600 mb-6">
+                            Our fuel tank rental program features BLOC double-wall fuel storage tanks, providing
+                            flexible and cost-effective fuel storage for your operations. These cube-style tanks range
+                            from 264 to 3,434 gallons and feature integral secondary containment, eliminating the need
+                            for traditional bunded wall construction. All tanks are properly maintained, certified to
+                            UL-142 and ULC-S601-14 standards, and ready for immediate use.
+                        </p>
+                        <ul class="space-y-3 text-gray-700 mb-6">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Multiple tank sizes to fit your needs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Professional delivery and setup included</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Long-term rental discounts available</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Regular fuel delivery service available</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html"
+                            class="inline-block rounded-md bg-red-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700">
+                            Request Tank Rental
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-3xl font-bold text-center mb-4">Available BLOC Tank Sizes</h3>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Double-wall fuel storage tanks from 264 to 3,434 gallons. All BLOC tanks feature double-wall containment
+                for added safety and meet UL-142 and ULC-S601-14 compliance standards. Choose the perfect fuel storage
+                solution for your needs. All tanks include delivery, setup, and pickup.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Bloc 1000 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-1000.jpg" alt="BLOC 1000 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md border border-gray-200"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text=BLOC+1000'; this.onerror=null;">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 1000</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">264 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">Perfect for smaller job sites and temporary projects</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• Easy to transport</li>
+                        <li>• Quick setup</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+
+                <!-- Bloc 2000 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-2000.jpg" alt="BLOC 2000 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text='+this.alt.replace(' Tank',''); this.onerror=null;"
+                        class="border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 2000</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">500 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">Ideal for medium-sized operations</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• Mobile and modular</li>
+                        <li>• Reliable storage</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+
+                <!-- Bloc 2500 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-2500.jpg" alt="BLOC 2500 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text='+this.alt.replace(' Tank',''); this.onerror=null;"
+                        class="border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 2500</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">660 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">Great for extended projects</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• Extended fuel supply</li>
+                        <li>• Easy relocation</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+
+                <!-- Bloc 4500 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-4500.jpg" alt="BLOC 4500 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text='+this.alt.replace(' Tank',''); this.onerror=null;"
+                        class="border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 4500</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">1,189 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">For larger construction sites</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• High capacity storage</li>
+                        <li>• Professional grade</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+
+                <!-- Bloc 6000 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-6000.jpg" alt="BLOC 6000 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text='+this.alt.replace(' Tank',''); this.onerror=null;"
+                        class="border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 6000</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">1,585 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">Heavy-duty fuel storage</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• Maximum capacity</li>
+                        <li>• Long-term rental available</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+
+                <!-- Bloc 8000 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-8000.jpg" alt="BLOC 8000 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text='+this.alt.replace(' Tank',''); this.onerror=null;"
+                        class="border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 8000</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">2,113 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">For large-scale operations</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• Industrial capacity</li>
+                        <li>• Bulk fuel storage</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+
+                <!-- Bloc 10000 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-10000.jpg" alt="BLOC 10000 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text='+this.alt.replace(' Tank',''); this.onerror=null;"
+                        class="border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 10000</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">2,642 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">Maximum fuel storage capacity</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• Premium capacity</li>
+                        <li>• Enterprise solutions</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+
+                <!-- Bloc 13000 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative">
+                    <img src="pictures/bloc-13000.jpg" alt="BLOC 13000 Tank"
+                        class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md"
+                        onerror="this.src='https://via.placeholder.com/80x80/ef4444/ffffff?text='+this.alt.replace(' Tank',''); this.onerror=null;"
+                        class="border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">BLOC 13000</h3>
+                    <p class="text-2xl font-bold text-red-600 mb-4">3,434 Gallon</p>
+                    <p class="text-sm text-gray-600 mb-4">Ultimate capacity for major projects</p>
+                    <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                        <li>• Double-wall containment</li>
+                        <li>• Maximum storage</li>
+                        <li>• Long-term rates available</li>
+                    </ul>
+                    <a href="contact.html"
+                        class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                        Request Quote
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-4xl mx-auto">
+                <h4 class="font-semibold text-blue-900 mb-2">About BLOC Tanks</h4>
+                <p class="text-sm text-blue-800">
+                    All BLOC tanks are double-wall fuel storage tanks offering flexible storage and dispensing
+                    solutions.
+                    These cube-style tanks feature integral secondary containment, eliminating the need for traditional
+                    bunded wall construction. They are mobile, modular, and designed for fast, easy installation.
+                    All tanks meet UL-142 and ULC-S601-14 compliance standards. <a
+                        href="https://unityfuel.com/bloc-tanks/" target="_blank" class="underline font-semibold">Learn
+                        more about BLOC tanks</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section 3 -->
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pr-4">
+                    <div
+                        class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                        <img class="absolute inset-0 size-full object-cover brightness-100" src="pictures/IMG_4632.jpg"
+                            alt="Professional fuel delivery service"
+                            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop'">
+                        <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
+                        <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                            aria-hidden="true">
+                            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-red-600 to-red-800 opacity-40"
+                                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                            </div>
+                        </div>
+                        <figure class="relative isolate">
+                            <div class="flex items-center gap-x-4 mb-4">
+                                <div class="size-12 rounded-full bg-gray-50 flex items-center justify-center">
+                                    <svg class="size-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <div class="flex items-center">
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+                                    <strong class="text-white font-semibold">Verified Customer Review</strong>
+                                </div>
+                            </div>
+                            <blockquote class="mt-6 text-xl/8 font-semibold text-white">
+                                <p>"On Demand Fuel Services has been a game-changer for our construction site. Their
+                                    reliable delivery and professional service keep our equipment running without
+                                    interruption. Highly recommended!"</p>
+                            </blockquote>
+                            <figcaption class="mt-6 text-sm/6 text-gray-300">
+                                <strong class="font-semibold text-white">Construction Site Manager,</strong> Verified
+                                Customer
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-base/7 text-gray-700 lg:max-w-lg">
+                        <p class="text-base/7 font-semibold text-red-600">Why Choose Us</p>
+                        <h2 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            Your Trusted Fuel Partner</h2>
+                        <div class="max-w-xl">
+                            <p class="mt-6">At On Demand Fuel Services, we understand that downtime costs money. That's
+                                why we're committed to providing fast, reliable fuel delivery and tank rental services
+                                that keep your operations running smoothly.</p>
+                            <p class="mt-8">Our professional team delivers high-quality off-road diesel directly to your
+                                job site, whether you need fuel for heavy equipment, generators, or both. We offer
+                                competitive pricing and a low minimum order of just 100 gallons - significantly lower
+                                than most competitors. Our fuel trucks are also equipped with DEF for optional top-off
+                                service. We offer flexible scheduling and on-demand service to meet your unique needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-10 flex">
+                        <a href="contact.html" class="text-base/7 font-semibold text-red-600">Get in touch today
+                            <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">On Demand Fuel Services</h4>
+                    <p class="text-gray-400">Professional fuel delivery and tank rental services for your business
+                        needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#equipment" class="text-gray-400 hover:text-white">Equipment Fueling</a></li>
+                        <li><a href="#generator" class="text-gray-400 hover:text-white">Generator Fueling</a></li>
+                        <li><a href="#tanks" class="text-gray-400 hover:text-white">Tank Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <div class="flex flex-col space-y-2 text-gray-400">
+                        <p>Phone: <a href="tel:3059219225" class="hover:text-white">(305) 921-9225</a></p>
+                        <p>Email: <a href="mailto:Sales@ondemandfuelingfl.com"
+                                class="hover:text-white">Sales@ondemandfuelingfl.com</a></p>
+                        <p>Address: 15476 NW 77th Ct St 111<br>Miami Lakes, FL 33016</p>
+                        <p>Available 24/7 for emergency fuel delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 On Demand Fuel Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

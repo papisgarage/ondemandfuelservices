@@ -1,0 +1,18 @@
+{
+  "name": "on-demand-fuel-services",
+  "version": "1.0.0",
+  "description": "Local server for On Demand Fuel Services website",
+  "main": "start-server.js",
+  "scripts": {
+    "start": "node start-server.js",
+    "serve": "node start-server.js"
+  },
+  "keywords": [
+    "fuel",
+    "services",
+    "local-server"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+

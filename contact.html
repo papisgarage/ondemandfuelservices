@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact On Demand Fuel Services - Get a quote for fuel delivery, tank rentals, equipment fueling, or generator fueling. Available 24/7 for emergency service.">
+    <meta name="keywords"
+        content="contact fuel services, fuel delivery quote, tank rental quote, equipment fueling, generator fueling">
+    <title>Contact Us | On Demand Fuel Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.querySelector('#mobile-menu-button');
+            const closeMenuButton = document.querySelector('#mobile-menu-close');
+            const mobileMenu = document.querySelector('[role="dialog"]');
+
+            // Hide menu by default
+            if (mobileMenu) {
+                mobileMenu.style.display = 'none';
+            }
+
+            function toggleMenu(event) {
+                event.stopPropagation();
+                if (mobileMenu) {
+                    const isHidden = mobileMenu.style.display === 'none';
+                    mobileMenu.style.display = isHidden ? 'block' : 'none';
+                }
+            }
+
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', toggleMenu);
+            }
+            if (closeMenuButton) {
+                closeMenuButton.addEventListener('click', toggleMenu);
+            }
+
+            // Add click handler to close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                if (mobileMenu && mobileMenu.style.display === 'block') {
+                    if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                        mobileMenu.style.display = 'none';
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="pt-16 font-sans">
+    <!-- Navigation -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <nav class="mx-auto h-20 flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="index.html" class="-m-1.5 p-1.5">
+                    <span class="sr-only">On Demand Fuel Services</span>
+                    <img class="h-16 w-auto" src="logo/On Demand Lgo Red and Black.png" alt="On Demand Fuel Services Logo">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="mobile-menu-button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.html" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Home</a>
+                <a href="index.html#equipment" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Equipment Fueling</a>
+                <a href="index.html#generator" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Generator Fueling</a>
+                <a href="index.html#tanks" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Tank Rentals</a>
+                <a href="contact.html" class="text-sm/6 font-semibold text-gray-900 hover:text-red-600">Contact</a>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-10"></div>
+            <div
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                    <a href="index.html" class="-m-1.5 p-1.5">
+                        <span class="sr-only">On Demand Fuel Services</span>
+                        <img class="h-12 w-auto" src="logo/On Demand Lgo Red and Black.png" alt="On Demand Fuel Services Logo">
+                    </a>
+                    <button type="button" id="mobile-menu-close" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6">
+                            <a href="index.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+                            <a href="index.html#equipment"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Equipment Fueling</a>
+                            <a href="index.html#generator"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Generator Fueling</a>
+                            <a href="index.html#tanks"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Tank Rentals</a>
+                            <a href="contact.html"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <div class="relative bg-white pt-24 pb-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+                    Get In Touch
+                </h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
+                    Ready to keep your operations running? Contact us today for a quote on fuel delivery, tank rentals, 
+                    equipment fueling, or generator fueling. We're available 24/7 for emergency service.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-lg p-8 shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Request a Quote</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                            <input type="text" id="company" name="company"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Needed *</label>
+                            <select id="service" name="service" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="equipment-fueling">Equipment Fueling</option>
+                                <option value="generator-fueling">Generator Fueling</option>
+                                <option value="def-service">DEF Top-Off Service</option>
+                                <option value="tank-rental">Tank Rental</option>
+                                <option value="equipment-tank">Equipment Fueling + Tank Rental</option>
+                                <option value="generator-tank">Generator Fueling + Tank Rental</option>
+                                <option value="all-services">All Services (Fuel + DEF)</option>
+                                <option value="quote">General Quote</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="location" class="block text-sm font-medium text-gray-700 mb-2">Service Location</label>
+                            <input type="text" id="location" name="location" placeholder="City, State or Job Site Address"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="urgency" class="block text-sm font-medium text-gray-700 mb-2">Urgency</label>
+                            <select id="urgency" name="urgency"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent">
+                                <option value="standard">Standard (1-3 business days)</option>
+                                <option value="urgent">Urgent (24-48 hours)</option>
+                                <option value="emergency">Emergency (Same day)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us about your fuel needs, project details, or any questions you have..."
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full rounded-md bg-red-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">Get in Touch</h3>
+                            <p class="text-gray-600 mb-4">
+                                Whether you need a one-time fuel delivery or ongoing service, we're here to help. 
+                                Our team is ready to provide you with a customized solution that fits your needs and budget.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-start mb-4">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Phone</h4>
+                                    <p class="text-gray-600"><a href="tel:3059219225" class="hover:text-red-600">(305) 921-9225</a></p>
+                                    <p class="text-sm text-gray-500 mt-1">Available 24/7 for emergencies</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-start mb-4">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Email</h4>
+                                    <p class="text-gray-600"><a href="mailto:Sales@ondemandfuelingfl.com" class="hover:text-red-600">Sales@ondemandfuelingfl.com</a></p>
+                                    <p class="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Address</h4>
+                                    <p class="text-gray-600">15476 NW 77th Ct St 111</p>
+                                    <p class="text-gray-600">Miami Lakes, FL 33016</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Business Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 7:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 8:00 AM - 4:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Emergency service only</p>
+                                    <p class="text-sm text-red-600 font-semibold mt-2">24/7 Emergency Service Available</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+                            <h4 class="font-semibold text-red-900 mb-2">Emergency Service</h4>
+                            <p class="text-red-700 text-sm">
+                                Need fuel immediately? Call our emergency line for same-day service. We understand that 
+                                equipment downtime costs money, and we're here to help minimize your losses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Contact Us Section -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose On Demand Fuel Services?</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Fast Response</h3>
+                    <p class="text-gray-600">Quick turnaround times and emergency service available 24/7 to keep your operations running.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Reliable Service</h3>
+                    <p class="text-gray-600">Dependable fuel delivery and professional service you can count on, every time.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Competitive Pricing</h3>
+                    <p class="text-gray-600">Fair, transparent pricing with bulk discounts and flexible payment options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">On Demand Fuel Services</h4>
+                    <p class="text-gray-400">Professional fuel delivery and tank rental services for your business needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#equipment" class="text-gray-400 hover:text-white">Equipment Fueling</a></li>
+                        <li><a href="index.html#generator" class="text-gray-400 hover:text-white">Generator Fueling</a></li>
+                        <li><a href="index.html#tanks" class="text-gray-400 hover:text-white">Tank Rentals</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Us</h4>
+                    <div class="flex flex-col space-y-2 text-gray-400">
+                        <p>Phone: <a href="tel:3059219225" class="hover:text-white">(305) 921-9225</a></p>
+                        <p>Email: <a href="mailto:Sales@ondemandfuelingfl.com" class="hover:text-white">Sales@ondemandfuelingfl.com</a></p>
+                        <p>Address: 15476 NW 77th Ct St 111<br>Miami Lakes, FL 33016</p>
+                        <p>Available 24/7 for emergency fuel delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 On Demand Fuel Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
