@@ -113,6 +113,7 @@
                             <a href="equipment.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Equipment Fueling</a>
                             <a href="generator.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Generator Fueling</a>
                             <a href="tanks.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Tank Rentals</a>
+                            <a href="fleet.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Fleet Fueling</a>
                             <a href="contact.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
                         </div>
                     </div>
@@ -132,9 +133,10 @@
                     tanks include delivery, setup, and pickup service.
                 </p>
             </div>
-            <div class="mb-12">
-                <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-                    <div class="space-y-4">
+            <div class="mb-12 space-y-16">
+                <!-- Row 1: Two photos left, text right -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="grid sm:grid-cols-2 gap-4">
                         <img src="pictures/Tank rental 1.png" alt="Portable fuel tanks on construction site"
                             class="w-full h-auto rounded-lg shadow-xl"
                             onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop'">
@@ -181,6 +183,44 @@
                             class="inline-block rounded-md bg-red-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700">
                             Request Tank Rental
                         </a>
+                    </div>
+                </div>
+
+                <!-- Row 2: Text left (on desktop), photos right -->
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Tank Rentals Built Around Your Jobs</h2>
+                        <p class="text-gray-600 mb-6">
+                            Whether you are staging fuel for a long-term construction project, a remote site, or a busy
+                            yard, our BLOC tanks are designed to fit tight spaces and real-world conditions. We help you
+                            plan placement, capacity, and refills so your crews always have fuel when and where they
+                            need it.
+                        </p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Ideal for construction sites, events, farms, and remote operations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Safe, double-wall storage that works on tight job sites</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Coordinated fuel deliveries so your tanks stay topped off</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <img src="pictures/tank rental 4.jpg" alt="Tank rental in operation"
+                            class="w-full h-auto rounded-lg shadow-xl"
+                            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop'">
                     </div>
                 </div>
             </div>
@@ -256,14 +296,81 @@
                     <a href="contact.html" class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">Request Quote</a>
                 </div>
             </div>
-            <div class="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-4xl mx-auto">
-                <h4 class="font-semibold text-blue-900 mb-2">About BLOC Tanks</h4>
-                <p class="text-sm text-blue-800">
-                    All BLOC tanks are double-wall fuel storage tanks offering flexible storage and dispensing solutions.
-                    These cube-style tanks feature integral secondary containment, eliminating the need for traditional
-                    bunded wall construction. They are mobile, modular, and designed for fast, easy installation.
-                    All tanks meet UL-142 and ULC-S601-14 compliance standards. <a href="https://unityfuel.com/bloc-tanks/" target="_blank" class="underline font-semibold">Learn more about BLOC tanks</a>.
+            <!-- Aboveground Fuel Tanks (Grande Series) -->
+            <div class="mt-20">
+                <h3 class="text-3xl font-bold text-center mb-4">Aboveground Fuel Tanks (Grande Series)</h3>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    For bulk aboveground storage, Grande tanks provide double-walled, self-bunded fuel storage built on ISO
+                    container footprints. Perfect when you need more capacity than a cube-style BLOC tank, while still
+                    meeting UL-142 and ULC-S601-14 compliance requirements.
                 </p>
+                <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Grande 12 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative border border-gray-200">
+                        <img src="pictures/2969-gallon-above-ground-fuel-tank-1-57062ebd.webp"
+                            alt="Grande 12 Aboveground Fuel Tank"
+                            class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md border border-gray-200"
+                            onerror="this.src='https://via.placeholder.com/80x80/1d4ed8/ffffff?text=G12'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">GRANDE 12</h3>
+                        <p class="text-2xl font-bold text-red-600 mb-4">2,906 Gallon</p>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Compact aboveground tank for bulk diesel or gasoline storage with integrated pump bay.
+                        </p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                            <li>• Double-walled, self-bunded design</li>
+                            <li>• ISO 20' container footprint for easy transport</li>
+                            <li>• Ideal for small fuel farms and depots</li>
+                        </ul>
+                        <a href="contact.html"
+                            class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                            Request Quote
+                        </a>
+                    </div>
+
+                    <!-- Grande 30 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative border border-gray-200">
+                        <img src="pictures/7753-gallon-above-ground-fuel-tank-1-90f07ec3.webp"
+                            alt="Grande 30 Aboveground Fuel Tank"
+                            class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md border border-gray-200"
+                            onerror="this.src='https://via.placeholder.com/80x80/1d4ed8/ffffff?text=G30'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">GRANDE 30</h3>
+                        <p class="text-2xl font-bold text-red-600 mb-4">7,753 Gallon</p>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Mid-size aboveground tank for high-volume diesel, gasoline, or lubricant storage.
+                        </p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                            <li>• Premium double-walled construction</li>
+                            <li>• Built for harsh operating environments</li>
+                            <li>• Ideal for busy yards and fuel farms</li>
+                        </ul>
+                        <a href="contact.html"
+                            class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                            Request Quote
+                        </a>
+                    </div>
+
+                    <!-- Grande 68 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow relative border border-gray-200">
+                        <img src="pictures/17322-gallon-above-ground-fuel-tank-thm-3-6beb6eaa.webp"
+                            alt="Grande 68 Aboveground Fuel Tank"
+                            class="absolute top-4 right-4 w-28 h-20 object-cover rounded-lg shadow-md border border-gray-200"
+                            onerror="this.src='https://via.placeholder.com/80x80/1d4ed8/ffffff?text=G68'; this.onerror=null;">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 pr-32">GRANDE 68</h3>
+                        <p class="text-2xl font-bold text-red-600 mb-4">17,322 Gallon</p>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Large-capacity aboveground tank for major projects and central fuel storage locations.
+                        </p>
+                        <ul class="space-y-1 text-sm text-gray-700 mb-6">
+                            <li>• High-volume bulk storage in a single footprint</li>
+                            <li>• Designed to ISO container specifications</li>
+                            <li>• Supports multiple products and pump options</li>
+                        </ul>
+                        <a href="contact.html"
+                            class="inline-block w-full text-center border-2 border-red-600 text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                            Request Quote
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
