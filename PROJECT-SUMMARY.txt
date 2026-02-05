@@ -1,0 +1,35 @@
+ON DEMAND FUEL SERVICES – WEBSITE CHANGES SUMMARY
+================================================
+
+REVIEWS & TESTIMONIALS
+• Added more customer reviews highlighting speed and service.
+• Turned testimonials into slideshows (prev/next + dots) on all service sections.
+• Each testimonial area now cycles through multiple reviews automatically.
+
+PAGES & STRUCTURE
+• Split the single long page into separate pages:
+  - index.html (Home): Hero, Service Region, testimonials, footer
+  - equipment.html: Equipment Fueling only + testimonials + footer
+  - generator.html: Generator Fueling only + testimonials + footer
+  - tanks.html: Tank Rentals + BLOC tank sizes grid + testimonials + footer
+  - fleet.html: Fleet Fueling (new) + testimonials + footer
+  - contact.html: Contact form (unchanged)
+• Every page has the same nav bar and footer (Quick Links + contact info).
+
+NAVIGATION & FOOTER
+• Nav and footer link to: Home, Equipment Fueling, Generator Fueling, Tank Rentals, Fleet Fueling, Contact.
+• All links use .html pages (no # anchors).
+
+IMAGES
+• Equipment Fueling page: uses "equipment fueling.png".
+• Tank Rentals page: uses "Tank rental 1.png" and "Tank Rental 2 .png" (both in main section).
+• Fleet Fueling page: uses "Fleet 1 .jpg" as main image.
+• Homepage hero: main image set to "Tank rental 1.png".
+
+NEW PAGE: FLEET FUELING
+• New fleet.html with tab title "Fleet Fueling | On Demand Fuel Services".
+• Generic fleet fueling description (on-site diesel for trucks/vans/fleets, DEF, South Florida).
+• Same testimonial slideshow and footer as other service pages.
+
+---
+Short summary of everything done to the site.

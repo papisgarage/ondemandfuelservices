@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-const PORT = 8000;
+const PORT = 5001;
 
 const mimeTypes = {
     '.html': 'text/html',
